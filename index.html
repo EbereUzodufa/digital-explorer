@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; user-scalable=yes">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+        <style>
+            body, #top, #bottom, footer, #yellow-band-above-footer{
+                width: 100%;
+                max-width: 100%;
+            }
+
+            body{
+                display: grid;
+                grid-template-rows: 48px 505px auto 12px 320px;
+                margin: 0px;
+            }
+
+            h1, h2, h3, h4, p{
+                font-family: 'Roboto', sans-serif;
+            }
+
+            h1, h2, h3{
+                font-weight: 900;
+            }
+
+            h4, p{
+                font-weight: 400;
+            }
+            
+            h1, p{
+                color: #4F4D53;
+            }
+
+            h2, h3, h4.profileName{
+                color: #E8BE02;
+            }
+
+            h1{
+                font-size: 100px;
+                margin: 202.5px auto;
+            }
+
+            h2{
+                font-size: 64px;
+            }
+            
+            h1, h2{
+                width: 100%;
+                text-align: center; 
+            }
+
+            h3, p{
+                font-size: 20px;
+            }
+            
+            h4{
+                margin: 0px;
+            }
+
+            h4{
+                font-size: 14px;
+                color: #FFFFFF;
+            }
+
+            #navBar, footer{
+                background: #4F4D53;
+            }
+            
+            #navBar{
+                grid-row-start: 1;
+            }
+
+            #top{
+                background-image: url(media/img_hero.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                grid-row: 2/3;
+            }
+
+            #bottom{
+                grid-row: 3/4;
+            }
+
+            #yellow-band-above-footer{
+                grid-row: 4/5;
+                background: #E8BE02;
+            }
+
+            footer{
+                grid-row-start:5;
+            }
+
+            .container, .navContainer {
+                margin: 10px auto;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .navContainer, p#middleBanner, .container, .about{
+                width: 750px;
+            }
+
+            .footer-item-containers{
+                width: 150px;
+                padding: 10px;
+                margin: 10px auto;
+            }
+
+            .searchDiv {
+                margin-left: auto;
+                background: #000;
+                padding: 5px;
+            }
+
+            img.searchImage {
+                height: 15px;
+                margin: 0px;
+                vertical-align: bottom;
+            }
+
+            input#searchText {
+                border: 0px;
+                margin: auto 0px;
+                color: #fff;
+                background: #000;
+            }
+
+            p#middleBanner {
+                text-align: center;
+                margin: auto;
+            }
+            
+            .about{
+                margin-top: -100px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            img.aboutImg, img.profileImg{
+                border-radius: 50%;
+            }
+
+            img.aboutImg{
+                width: 200px;
+                height: 200px;
+                margin-right: 50px;
+                margin-left: auto;
+            }
+        
+            img.profileImg{
+                width: 100px;
+                height: 100px;
+            }
+
+            img.aboutImg:last-of-type{
+                margin-right: 0px;
+            }
+
+            .profile{
+                display: flex;
+                flex-wrap: wrap;
+                padding: 30px;
+                margin: auto;
+            }
+
+            .profileDetailCard{
+                width: 150px;
+                display: grid;
+                padding: 10px;
+                margin: auto 5px;
+                grid-template-rows: auto;
+            }
+
+            h4.profileName, .profileDetailCard p {
+                width: 100%;
+                margin: 0px;
+            }
+
+            h4.profileName{
+                font-weight: bold;
+                grid-row-end: 1;
+            }
+
+            p.profileEmail{
+                grid-row-end: 2;
+            }
+
+            p.profileTel{
+                grid-row-end: 3;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav id="navBar">
+            <div class="navContainer">
+                <img src="media/gtd_logo.png" alt= "GTD logo" id="logo">
+                <div class="searchDiv">
+                    <img src="media/ic_search.png" alt="search icon" class="searchImage">
+                    <label for="searchText"></label>
+                    <input id="searchText" type="text" placeholder="Search"> 
+                </div>
+            </div>
+        </nav>
+        <div id="top">
+            <h1>Hello, we’re gtd.</h1>
+        </div>
+        <div id="bottom">
+            <div class="about">
+                <img src="media/img_lisa.jpg" alt="image of Lisa" class="aboutImg">
+                <img src="media/img_danielle.jpg" alt="image of Danielle" class="aboutImg">
+                <img src="media/img_brian.jpg" alt="image of Brian" class="aboutImg">
+            </div>
+            <h2>How it started</h2>
+            <p id="middleBanner">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris n
+             isi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in c
+             ulpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="container">
+                <div class="profile">
+                    <img src="media/img_lisa.jpg" alt="image of Lisa" class="profileImg">
+                    <div class="profileDetailCard">
+                        <h4 class="profileName">Lisa</h4>
+                        <div class="profileDetail">  
+                            <p class="profileEmail"> lisa@gtd.co </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile">
+                    <img src="media/img_danielle.jpg" alt="image of Danielle" class="profileImg">
+                    <div class="profileDetailCard">
+                        <h4 class="profileName">Danielle</h4>
+                        <div class="profileDetail">
+                            <p class="profileEmail"> danielle@gtd.co </p>
+                            <p class="profileTel">(123) 456-7890 </p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="yellow-band-above-footer"></div>
+        <footer>
+            <div class="container">
+                <div class="footer-item-containers">
+                    <h3>Team</h3>
+                    <h4>Lisa</h4>
+                    <h4>Danielle</h4>
+                    <h4>Brian</h4>
+                    <h4>Join us!</h4>
+                </div>
+                <div class="footer-item-containers">
+                    <h3>Learn More</h3>
+                    <h4>Manifesto</h4>
+                    <h4>Works</h4>
+                    <h4>Stories</h4>
+                </div>
+                <div class="footer-item-containers">
+                    <h3>Meet Us</h3>
+                    <h4>Studio</h4>
+                    <h4>Community</h4>
+                    <h4>Workshops</h4>
+                </div>
+                <div class="footer-item-containers">
+                    <h3>Contact</h3>
+                    <h4>Twitter</h4>
+                    <h4>Facebook</h4>
+                    <h4>Instagram</h4>
+                </div>
+            </div>
+        </footer>  
+    </body>
+</html>
+
+
